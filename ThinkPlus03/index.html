@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduDash | Minimalist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="role-switcher">
+                <p>Viewing As:</p>
+                <select id="roleSelect" onchange="switchRole()">
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                </select>
+            </div>
+            <hr>
+            <nav id="nav-links">
+                </nav>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1 id="view-title">Student Dashboard</h1>
+            </header>
+            
+            <section id="dynamic-content">
+                </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
